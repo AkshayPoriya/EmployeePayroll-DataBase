@@ -8,3 +8,5 @@ COUNT(salary) AS 'salary_count'
 FROM employee_payroll
 GROUP BY gender;
 
+
+select * from employee_payroll;
