@@ -1,5 +1,6 @@
 -- Create Table 
 -- identity(starting_value, increament)
+
 CREATE TABLE employee_payroll
 (
 name VARCHAR(150) NOT NULL,
