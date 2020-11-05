@@ -1,8 +1,21 @@
--- Add Gender Column
+/*********************************************************************************
+Update Operation
+Add Gender Column and then update enteries for gender
+*********************************************************************************/
 
-ALTER TABLE employee_payroll 
-ADD gender char(1);
+USE payroll_service;
 
--- Update values
+ALTER TABLE employee_payroll
+ADD gender char(1),
+CONSTRAINT chk_gender CHECK (gender IN ('M','F'));
 
-UPDATE employee_payroll SET gender = 'M';
+
+UPDATE employee_payroll 
+SET gender = 'M'
+WHERE name IN('Ross','Joey','Chandler');
+
+UPDATE employee_payroll 
+SET gender = 'F'
+WHERE name IN('RACHEL','MONIKA','Phoebe');
+
+SELECT * FROM employee_payroll;

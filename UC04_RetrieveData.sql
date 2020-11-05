@@ -1,3 +1,7 @@
--- Retrieve Data
+/*********************************************************************************
+Retrieve Data Using Select
+*********************************************************************************/
 
-select * from employee_payroll;
+USE payroll_service;
+
+SELECT * FROM employee_payroll;

@@ -1,6 +1,13 @@
--- Make Terissa Part of sales and ma
+/*********************************************************************************
+Make Rachel part of Sales department also
 
-INSERT INTO employee_payroll (name,salary,start,gender,phoneNumber,address,department,basicPay,deductions,taxablePay,incomeTax,netPay)
+Create Unnecessary redundancy
+*********************************************************************************/
+
+USE payroll_service;
+
+INSERT INTO employee_payroll (name,start,gender,address,department,basic_pay)
 VALUES 
-('Terisa', 80000, '2018-01-01', 'F','9010203040','Mumbai','Marketing','40000','2000','38000','3800','76200'),
-('Terisa', 80000, '2018-01-01','F' ,'9010203040','Mumbai','Sales','40000','2000','38000','3800','76200');
+('Rachel', '2017-3-1', 'F', 'Central Park','Sales','30000');
+
+SELECT * FROM employee_payroll;
